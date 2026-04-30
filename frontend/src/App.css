@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #89f1e9;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+.title {
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+/* Upload Box */
+.upload-box {
+  background: rgba(247, 247, 248, 0.895);
+  padding: 30px;
+  margin: auto;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.upload-box input {
+  margin-bottom: 10px;
+}
+
+/* Modules Display */
+.modules-box {
+  margin-top: 30px;
+}
+
+.modules-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modules-box li {
+  background: #3498db;
+  color: white;
+  margin: 10px auto;
+  padding: 12px;
+  width: 60%;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.module-btn {
+  width: 60%;
+  padding: 10px;
+  margin: 8px auto;
+  display: block;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.module-btn:hover {
+  background: #2980b9;
+}
+
+.back-btn {
+  margin: 20px;
+  padding: 8px 15px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result-box {
+  text-align: center;
+  margin-top: 30px;
+}

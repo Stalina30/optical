@@ -5,13 +5,15 @@ function CompareModels() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
   const runCompare = async () => {
     setError("");
     setResults(null);
     setLoading(true);
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/compare", {
+      const res = await fetch(`${API_URL}/compare`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

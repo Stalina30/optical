@@ -3,8 +3,10 @@ import React, { useState } from "react";
 function DBSCAN() {
   const [result, setResult] = useState(null);
 
+  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
   const runModule5 = async () => {
-    const res = await fetch("http://localhost:5000/module5");
+    const res = await fetch(`${API_URL}/module5`);
     const data = await res.json();
     setResult(data);
   };

@@ -5,13 +5,15 @@ function Evaluation() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
   const runModule6 = async () => {
     setLoading(true);
     setError("");
     setResult(null);
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/module6");
+      const res = await fetch(`${API_URL}/module6`);
 
       if (!res.ok) {
         throw new Error("Server not responding");

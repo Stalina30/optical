@@ -19,8 +19,9 @@ CORS(app)
 # ==============================
 # ✅ MongoDB (GLOBAL CONNECTION - FIXED)
 # ==============================
+mongo_uri = os.environ.get("MONGO_URI", "mongodb+srv://ancy:ancy@cluster0.lcvgnag.mongodb.net/?appName=Cluster0")
 try:
-    client = MongoClient("mongodb://localhost:27017/", serverSelectionTimeoutMS=2000)
+    client = MongoClient(mongo_uri, serverSelectionTimeoutMS=2000)
     db = client["optical_fiber_security_db"]
     collection = db["pipeline_results"]
     client.server_info()  # force connection test

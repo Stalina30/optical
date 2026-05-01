@@ -1,10 +1,4 @@
 import os
-
-# ... existing code ...
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port, debug=False)
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import numpy as np
@@ -221,6 +215,7 @@ def module5():
 
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)})
+
 
 # ==============================
 # 🔹 MODULE 6
